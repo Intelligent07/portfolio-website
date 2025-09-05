@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Manisha Phulpagare | AI/ML Portfolio</title>
-<meta name="description" content="Portfolio of Manisha Phulpagare | AI/ML Engineer specializing in Data Analytics, NLP, and Computer Vision.">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.2.0/countUp.min.js"></script>
@@ -12,7 +11,7 @@
 /* Global Styles */
 * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
 body { background:#111; color:#fff; scroll-behavior:smooth; }
-section { padding:70px 20px; min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:flex-start; position:relative; scroll-margin-top:80px; }
+section { padding:70px 20px; min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:flex-start; position:relative; }
 h1,h2,h3 { margin-bottom:20px; text-align:center; }
 a { text-decoration:none; color:inherit; }
 button { cursor:pointer; }
@@ -92,7 +91,7 @@ footer { text-align:center; padding:20px; background:#111; color:#fff; }
 
 <!-- Home Section -->
 <section id="home">
-<img src="myimage.jpeg" alt="Profile Picture">
+<img src="assets/image.jpeg" alt="My Photo">
 <h1>Manisha Phulpagare</h1>
 <p>AI & ML Engineer | Data Analytics | NLP & Computer Vision</p>
 <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View My Work</button>
@@ -105,23 +104,23 @@ footer { text-align:center; padding:20px; background:#111; color:#fff; }
 <h2>Education</h2>
 <div class="timeline">
 <div class="card">
-<img src="Mumbai.png" alt="College Logo">
+<img src="assets/mumbai.png" alt="College Logo">
 <div>
-<h3>BE in Computer Science Engineering</h3>
+<h3>BE in COmputer Science Engineering</h3>
 <p>Lokmanya Tilak College of Engineering, Navi-Mumbai</p>
 <p>CGPA: 7.7/10 | Expected: 2025</p>
 </div>
 </div>
 <div class="card">
-<img src="gpt.png" alt="Diploma Logo">
+<img src="assets/gpt.png" alt="Diploma Logo">
 <div>
 <h3>Diploma in Computer Engineering</h3>
-<p>Government Polytechnic Thane</p>
+<p>Goverment Polytechnic Thane</p>
 <p>Percentage: 82%</p>
 </div>
 </div>
 <div class="card">
-<img src="lbsv.png" alt="School Logo">
+<img src="assets/lbsv.png" alt="School Logo">
 <div>
 <h3>SSC</h3>
 <p>LBSV School, Mumbai</p>
@@ -136,26 +135,28 @@ footer { text-align:center; padding:20px; background:#111; color:#fff; }
 <h2>Internship</h2>
 <div class="timeline">
 <div class="card">
-<img src="Codeveda.png" alt="Codeveda Logo">
+<img src="assets/codeveda.png" alt="Company Logo">
 <div>
 <h3>Data Analyst Intern</h3>
 <p>Codeveda Pvt Ltd | Aug 2025 – Sept 2025</p>
 <ul>
-<li>Cleaned, transformed & visualized large datasets.</li>
-<li>Created dashboards using Tableau & Python.</li>
-<li>Performed EDA to provide actionable insights.</li>
+<li>Assisted in data cleaning, transformation, and visualization of large datasets.</li>
+<li>Created interactive dashboards using Tableau and Python (Pandas, Matplotlib).</li>
+<li>Performed exploratory data analysis to provide actionable business insights.</li>
+<li>Collaborated with cross-functional teams to improve data pipelines.</li>
 </ul>
 </div>
 </div>
 <div class="card">
-<img src="coding jr.png" alt="Coding Jr Logo">
+<img src="assets/codingjr.png" alt="Company Logo">
 <div>
 <h3>AI/ML Intern</h3>
 <p>Coding Jr | Mar 2025 - May 2025</p>
 <ul>
-<li>Built predictive ML models for sales forecasting.</li>
-<li>Implemented preprocessing & feature engineering.</li>
-<li>Evaluated models using RMSE, R² Score.</li>
+<li>Built predictive ML models for sales forecasting using Scikit-learn.</li>
+<li>Implemented data preprocessing pipelines and feature engineering.</li>
+<li>Evaluated model performance using metrics like RMSE, R2 Score.</li>
+<li>Presented results to team and recommended model deployment strategy.</li>
 </ul>
 </div>
 </div>
@@ -180,22 +181,25 @@ footer { text-align:center; padding:20px; background:#111; color:#fff; }
 <section id="projects">
 <h2>Projects</h2>
 <div class="projects">
+
+<!-- Example Project Card -->
 <div class="project-card" onclick="openModal('modal1')">
-<img src="social.png" alt="Disaster Prediction">
+<img src="assets/disaster.png" alt="Disaster Prediction">
 <div class="overlay"><p>Disaster Prediction using Deep Learning</p></div>
 </div>
 <div class="project-card" onclick="openModal('modal2')">
-<img src="trading.png" alt="Trading Bot">
+<img src="assets/trading.png" alt="Trading Bot">
 <div class="overlay"><p>AI-Powered Trading Bot</p></div>
 </div>
 <div class="project-card" onclick="openModal('modal3')">
-<img src="pdf chatbot.png" alt="PDF Chatbot">
+<img src="assets/pdfchatbot.png" alt="PDF Chatbot">
 <div class="overlay"><p>LangChain-powered PDF Chatbot</p></div>
 </div>
 <div class="project-card" onclick="openModal('modal4')">
-<img src="social.png" alt="Social Media Analytics">
+<img src="assets/social.png" alt="Social Media Analytics">
 <div class="overlay"><p>Social Media Analytics Dashboard</p></div>
 </div>
+
 </div>
 </section>
 
@@ -204,32 +208,35 @@ footer { text-align:center; padding:20px; background:#111; color:#fff; }
 <div class="modal-content">
 <span class="close" onclick="closeModal('modal1')">&times;</span>
 <h2>Disaster Prediction using Deep Learning</h2>
-<p>CNN + LSTM-based model forecasting disasters from satellite imagery & time-series data.</p>
+<p>CNN + LSTM-based model forecasting disasters from satellite imagery & time-series data. Improved accuracy by 15% integrating geospatial features.</p>
 <p><strong>Tech Stack:</strong> Python, TensorFlow, Keras, Flask, Firebase</p>
 </div>
 </div>
+
 <div id="modal2" class="modal">
 <div class="modal-content">
 <span class="close" onclick="closeModal('modal2')">&times;</span>
 <h2>AI-Powered Trading Bot</h2>
-<p>Reinforcement learning agent using historical stock data & technical indicators.</p>
-<p><strong>Tech Stack:</strong> Python, FinRL, Stable-Baselines3, yFinance</p>
+<p>Reinforcement learning agent for Buy/Sell/Hold using historical stock data and technical indicators (EMA, RSI, MACD). Optimized for risk-adjusted rewards.</p>
+<p><strong>Tech Stack:</strong> Python, FinRL, Stable-Baselines3, yFinance, Gym-anytrading</p>
 </div>
 </div>
+
 <div id="modal3" class="modal">
 <div class="modal-content">
 <span class="close" onclick="closeModal('modal3')">&times;</span>
 <h2>LangChain-powered PDF Chatbot</h2>
-<p>Answers queries from uploaded PDFs using FAISS & HuggingFace LLMs.</p>
+<p>Processes and answers queries from uploaded PDFs using vector search (FAISS) & HuggingFace LLMs. Implemented document chunking and retrieval-augmented generation.</p>
 <p><strong>Tech Stack:</strong> Python, LangChain, HuggingFace, FAISS, Gradio</p>
 </div>
 </div>
+
 <div id="modal4" class="modal">
 <div class="modal-content">
 <span class="close" onclick="closeModal('modal4')">&times;</span>
 <h2>Social Media Analytics Dashboard</h2>
-<p>Analyzed social media data with sentiment analysis & network visualization.</p>
-<p><strong>Tech Stack:</strong> Python, NetworkX, NLP, SQL</p>
+<p>Analyzed social media data with network visualization, sentiment analysis, and trend detection. Integrated NLP for sentiment detection & NetworkX for influencer analysis.</p>
+<p><strong>Tech Stack:</strong> Python, NetworkX, NLP, Matplotlib, SQL</p>
 </div>
 </div>
 
@@ -256,13 +263,13 @@ footer { text-align:center; padding:20px; background:#111; color:#fff; }
 <!-- Contact -->
 <section id="contact" style="color:#000;">
 <h2>Contact Me</h2>
-<form action="https://formspree.io/f/your-form-id" method="POST">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message" required></textarea>
 <button type="submit">Send Message</button>
 </form>
-<p style="margin-top:10px;">✉ Email: manishaphulpagar07@gmail.com | 📱 9284586401</p>
+<p style="margin-top:10px;">✉ Email: manishaphulpagar07@gmail.com | 📱 Phone: 9284586401</p>
 <p>LinkedIn: <a href="https://www.linkedin.com/in/manisha-phulpagare-96951b218/" target="_blank">Link</a></p>
 <p>GitHub: <a href="https://github.com/Intelligent07" target="_blank">Link</a></p>
 </section>
@@ -289,9 +296,9 @@ createRadialChart('skill6',70,'#f1c40f');
 createRadialChart('skill7',70,'#8e44ad');
 
 // Counters
-const projectsCount = new CountUp('projectsCounter', 7);
-const internCount = new CountUp('internCounter', 4);
-const certCount = new CountUp('certCounter', 5);
+const projectsCount = new CountUp('projectsCounter', 4);
+const internCount = new CountUp('internCounter', 2);
+const certCount = new CountUp('certCounter', 4);
 window.addEventListener('scroll', () => {
     const dash = document.getElementById('dashboard');
     if(dash.getBoundingClientRect().top < window.innerHeight){
